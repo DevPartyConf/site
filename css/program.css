@@ -1,0 +1,157 @@
+body 
+{ 
+	background: #dbe5eb none repeat scroll 0 0;
+	font-family: "Roboto Slab",serif;
+	font-size: 12px;
+}
+
+.clear { clear: both; }
+
+.content-box_white
+{
+	width: 72.1%;
+	min-width: 200px;
+	margin: 90px auto;
+	padding: 0 30px 70px;
+	background: #fff none repeat scroll 0 0;
+	text-align: center;
+}
+
+.content-box__h, .content-box__h2
+{
+	padding: 60px 0 40px;
+	box-sizing: border-box;
+	color: #333;
+	font-size: 44px;
+	text-align: center;
+}
+
+#program_headers
+{
+	width: 452px;
+	margin: 0 auto;
+}
+
+.p_head
+{
+	display: block;
+	float: left;
+	height: 27px;
+	margin: 0 4px;
+	padding: 0 12px;
+	line-height: 27px;
+}
+
+.software { background-color: #e6f6e0;}
+.marketing { background-color: #f6e8cd;}
+.qa { background-color: #f2d8ee;}
+.management { background-color: #ceeaf6;}
+
+.room
+{
+	width: 100%;
+	display: block;
+	float: left;
+	height: 38px;
+	margin: 22px 1%;
+	line-height: 38px;
+	text-align: center;
+}
+
+.bordered
+{
+	border-top: 1px solid #dbe5eb;
+	border-bottom: 1px solid #dbe5eb;
+}
+
+.section
+{
+	width: 48%;
+	float: left;
+	margin: 2px 1%;
+	font-family: Verdana;
+	line-height: 1.7em;
+	text-align: left;
+}
+
+.block { margin: 2px 0; }
+
+.time
+{
+	float: left;
+	width: 14%;
+	padding: 15px 3%;
+}
+
+.desc
+{
+	float: left;
+	width: 74%;
+	padding: 15px 3%;
+	font-size: 1.17em;
+}
+
+.name
+{
+	font-weight: bold;
+	font-size: 0.85em;
+}
+
+.company
+{
+	font-style: italic;
+	font-size: 0.85em;
+}
+
+#white-block
+{
+	width: 100%;
+	height: 525px;
+}
+
+@media screen and (max-width: 1050px)
+{
+	.content-box__h { padding: 30px 0 0; }
+	.time, .desc 
+	{ 
+		float: none; 
+		width: 90%;
+		margin: 0 auto;
+		padding: 15px 0;
+	}
+	
+	.time { padding-bottom: 0; }
+}
+
+@media screen and (max-width: 700px)
+{
+	#program_headers { width: 255px; }
+	#program_headers .qa { clear: both; }
+	
+	#program_headers .qa, #program_headers .management{ margin-top: 2px; }
+	#program_headers .qa { width: 27%; }
+	#program_headers .management { width: 47%; }
+	
+	.desc { font-size: 1.1em; }
+}
+
+@media screen and (max-width: 550px)
+{
+	.desc { font-size: 0.95em; }
+}
+
+@media screen and (max-width: 500px)
+{
+	.section { float: none; width: 100%; }
+	.desc { font-size: 1.2em; }
+	.content-box__h, .content-box__h2 { font-size: 3em; }
+	.content-box_white { width: 220px; }
+	#program_headers { width: 180px; }
+	.p_head 
+	{ 
+		float: none;
+		width: 100% !important;
+		padding: 0;
+	}
+	
+}
